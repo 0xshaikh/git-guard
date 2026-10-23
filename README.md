@@ -53,6 +53,24 @@ git-guard scan --dir ./secrets
 git-guard audit --repo https://github.com/example/repo
 ```
 
+### What it looks like
+
+**Leaked classic PAT detected:**
+
+![scan --file classic PAT](images/scan-file-classic-pat.png)
+
+**Fine-grained PAT detected:**
+
+![scan --file fine-grained PAT](images/scan-file-fine-grained.png)
+
+**Clean scan (no tokens):**
+
+![clean scan](images/scan-clean.png)
+
+**PAT scope audit with admin:org (HIGH severity):**
+
+![PAT scope audit](images/scan-pat-scopes.png)
+
 ## Features
 
 - ✅ **Zero dependencies** — runs anywhere Node.js runs
