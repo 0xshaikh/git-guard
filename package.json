@@ -1,0 +1,43 @@
+{
+  "name": "git-guard",
+  "version": "1.0.0",
+  "description": "Audit GitHub Personal Access Tokens for over-permissive scopes and detect leaked tokens in files",
+  "main": "dist/index.js",
+  "bin": {
+    "git-guard": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node dist/__tests__/scanner.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "github",
+    "token",
+    "security",
+    "audit",
+    "leak",
+    "scanner"
+  ],
+  "author": "Anas Shaikh",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "homepage": "https://github.com/0xshaikh/git-guard#readme",
+  "bugs": {
+    "url": "https://github.com/0xshaikh/git-guard/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xshaikh/git-guard.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
